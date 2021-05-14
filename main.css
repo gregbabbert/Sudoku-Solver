@@ -1,0 +1,53 @@
+.sudoku-board {
+    padding: 2.5em 2.5em;
+    background-color: aqua;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+}
+  
+div > div {
+    padding: 10px;
+    background-color: #ccc;
+  }
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7,
+.section-8,
+.section-9 {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+}
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9 {
+    width: 5em;
+    height: 5em;
+}
+
+/* Remove input arrows */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  font-size: 3em;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
